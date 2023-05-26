@@ -61,7 +61,6 @@ func checkSiteStatus() {
 	defer response.Body.Close()
 
 	if response.StatusCode == 200 {
-		log("status 200")
 		if siteDown {
 			log(colorGreen("Site back up"))
 			siteDown = false
