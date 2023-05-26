@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  sitechecker:
+    build: .
+    container_name: go-sitechecker
+    hostname: go-sitechecker
+    env_file:
+      - .env
